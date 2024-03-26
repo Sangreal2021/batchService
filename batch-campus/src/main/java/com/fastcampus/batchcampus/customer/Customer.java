@@ -1,8 +1,12 @@
 package com.fastcampus.batchcampus.customer;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
 
 import java.time.LocalDateTime;
@@ -15,6 +19,8 @@ import java.time.LocalDateTime;
 @ToString
 public class Customer {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String name;
@@ -23,8 +29,10 @@ public class Customer {
 
     private LocalDateTime createAt;
 
+    @Setter
     private LocalDateTime loginAt;
 
+    @Setter
     private Status status;
 
     public Customer(String name, String email) {
