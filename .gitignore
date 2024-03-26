@@ -1,0 +1,15 @@
+# 무시할 폴더
+batch-campus/.gradle/
+batch-campus/.idea/
+batch-campus/bin/
+batch-campus/build/
+batch-campus/gradle/
+
+# 무시할 파일 형식
+*.log
+*.tmp
+*.jar
+*.pom
+*.gradle
+*.bat
+*.bat
