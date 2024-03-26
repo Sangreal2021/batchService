@@ -13,3 +13,4 @@ batch-campus/gradle/
 *.gradle
 *.bat
 *.bat
+gradlew
