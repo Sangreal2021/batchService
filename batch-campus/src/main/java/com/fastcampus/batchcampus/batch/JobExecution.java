@@ -17,5 +17,4 @@ public class JobExecution {
 
     private LocalDateTime endTime;
 
-
 }
