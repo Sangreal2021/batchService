@@ -49,6 +49,7 @@ public class DormantBatchJob {
 
                 // 2. 휴면계정 대상을 추출 및 변환
                 // 로그인 날짜      /      365일 전      /      오늘
+                // 현재 날짜에서 365일을 뺀 날짜가 고객의 마지막 로그인 날짜보다 이후인지 확인.
                 final boolean isDormantTarget = LocalDate.now()
                         .minusDays(365)
                         .isAfter(customer.getLoginAt().toLocalDate());
